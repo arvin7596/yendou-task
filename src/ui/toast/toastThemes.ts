@@ -18,9 +18,8 @@ const customSuccess = definePartsStyle({
       8px 8px -4px rgba(40, 41, 50, 0.06), 0px 16px 32px rgba(40, 41, 50, 
       0.06)`,
     borderRadius: "8px",
-    border: "1px solid",
-    borderImageSource:
-      "linear-gradient(0deg, #6F7076, #6F7076), radial-gradient(53.57% 282.15% at 2.14% 50%, rgba(116, 200, 152, 0.65) 0%, rgba(116, 200, 152, 0.1) 100%)",
+    border: "1px solid transparent",
+    borderImage: `linear-gradient(90deg, rgba(116, 200, 152, 0.65) 0%, rgba(116, 200, 152, 0.1) 100%)`,
     borderImageSlice: 1,
   },
   title: {
@@ -30,6 +29,7 @@ const customSuccess = definePartsStyle({
     fontSize: "14px",
     lineHeight: "16px",
     color: "#FFFFFF",
+    marginBottom: "8px",
   },
   description: {
     fontFamily: "Inter",
@@ -60,5 +60,9 @@ const toastTheme = defineMultiStyleConfig({
 export const theme = extendTheme({
   components: {
     Alert: toastTheme,
+  },
+  fonts: {
+    heading: `'Inter', sans-serif`,
+    body: `'Inter', sans-serif`,
   },
 });
