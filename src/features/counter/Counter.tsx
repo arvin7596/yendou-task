@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 
 import { Box, Flex, useToast } from "@chakra-ui/react"
-import ButtonComponent from "../../ui/button/Button"
+import ButtonComponent from "../../ui/button/ButtonComponent"
 import { CheckIcon } from '@chakra-ui/icons'
 import { useCounter } from "../../hooks/useCounter"
 

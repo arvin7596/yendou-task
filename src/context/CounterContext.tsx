@@ -1,5 +1,6 @@
 import { createContext, PropsWithChildren, useState } from "react";
 import { ICounterContext } from "./counterContext.type";
+
 export const CounterContext = createContext<ICounterContext | undefined>(undefined);
 
 const CounterContextProvider: React.FC<PropsWithChildren> = ({ children }) => {

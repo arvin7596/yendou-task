@@ -1,8 +1,12 @@
+
+import '@fontsource/inter/400.css'; // Regular weight
+import '@fontsource/inter/700.css'; // Bold weight
+import React from "react"
+
 import { Center } from "@chakra-ui/react"
 import CounterContextProvider from "./context/CounterContext"
 import Counter from "./features/counter/Counter"
 import ChakraProviderComponent from "./ui/toast/ToastProvider"
-import React from "react"
 
 
 const App: React.FC = () => {
